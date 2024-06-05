@@ -1,0 +1,36 @@
+<form id="address_data" action="address_input" class="mx-auto custom-form" novalidate>
+	<div class="form-floating mb-3">
+		<input type="text" class="form-control check-validity" id="addr_recipient" name="fullname" placeholder="Vor- und Nachname*" autocomplete="name" required>
+		<label for="addr_recipient">Vor- und Nachname*</label>
+		<span class="error-msg d-none" aria-live="polite" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="_"></span>
+	</div>
+	<div class="form-floating mb-3">
+		<input type="text" class="form-control check-validity" id="addr_street_num" name="street_num" placeholder="Straße u. Hausnr.*" autocomplete="street-address" required>
+		<label for="addr_street_num">Straße u. Hausnr.*</label>
+		<span class="error-msg d-none" aria-live="polite" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="_"></span>
+	</div>
+	<div class="row mb-3 gx-3">
+		<div class="col-4">
+			<div class="form-floating">
+				<input type="text" class="form-control check-validity" id="addr_zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="PLZ*" autocomplete="postal-code" required>
+				<label for="addr_zip">PLZ*</label>
+				<span class="error-msg d-none" aria-live="polite" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="_"></span>
+			</div>
+		</div>
+		<div class="col-8">
+			<div class="form-floating">
+				<input type="text" class="form-control check-validity" id="addr_city" name="city" placeholder="Ort*" autocomplete="address-level2" required>
+				<label for="addr_city">Ort*</label>
+				<span class="error-msg d-none" aria-live="polite" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="_"></span>
+			</div>
+		</div>
+	</div>
+	<div class="d-flex align-items-center mb-3">
+		<input type="submit" class="btn btn-lg btn-secondary me-3" value="Senden">
+		<div class="spinner-border text-secondary d-none" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<p class="feedback"></p>
+	<?php wp_nonce_field('address-data', 'security'); ?>
+</form>
