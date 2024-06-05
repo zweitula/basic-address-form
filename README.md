@@ -5,3 +5,8 @@ Basic address form that transfers user input to server and processed data back t
  - jQuery
 ## environment
 - WordPress
+## notes
+- uses bootstrap's floating labels
+- labels and placeholders are in German
+- autocomplete attributes refer to [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) recommendations
+- client-side form validation uses [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation) with feedback in German
