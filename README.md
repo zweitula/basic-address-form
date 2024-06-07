@@ -10,6 +10,6 @@ Basic address form that transfers user input to server and processed data back t
 - labels and placeholders are in German
 - autocomplete attributes refer to [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) recommendations
 - client-side form validation uses [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation) with feedback in German
-- server-side rudimentary exception handling is located in tcs_data_processing() called via try/catch from 
+- server-side rudimentary exception handling is located in tcs_data_processing() called via try/catch from tcs_address_input_func()
 - error messages to input fields are rendered via bootstrap tooltips
 - output of processed data via console.log for debugging
