@@ -3,7 +3,6 @@ Basic address form that transfers user input to server and processed data back t
 ## requirements
  - Bootstrap V5.0
  - jQuery
- - WordPress
 ## environment
 - WordPress
 ## notes
