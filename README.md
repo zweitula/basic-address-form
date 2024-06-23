@@ -1,5 +1,5 @@
 # basic-address-form
-Basic address form that transfers user input to server and processed data back to client with Ajax. Server-side processing is just a dummy function to close the entire loop of the AJAX-call!
+Basic address form that transfers user input to server and processed data back to client with AJAX. Server-side processing is just a dummy function to close the entire loop of the AJAX-call!
 ## requirements
  - Bootstrap V5.0
  - jQuery
